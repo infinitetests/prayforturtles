@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, h1, h2, h3, h4, h5, h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
@@ -30,27 +28,45 @@ body, html {
   min-height: 100%;
 }
 
-
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
+/* Ensure each span is on a separate line */
+.w3-display-middle span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de líneas a mostrar */
+  -webkit-box-orient: vertical;
+}
+
+/* Cambiar la fuente */
+.w3-display-middle span {
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif, sans-serif; /* Cambiar la fuente a Arial */
+}
+
+/* Evitar que el texto se salga de la pantalla */
+.w3-display-middle {
+  overflow: hidden; /* Oculta el texto que sobresale */
+  white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+}
+
+/* Ajustar el espaciado entre letras */
+.w3-display-middle span {
+  letter-spacing: -1px; /* Ajusta este valor según sea necesario */
+}
 
 </style>
 </head>
 <body>
 
-
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">EL <span class="w3-hide-small">BLOG DE</span> SERGIO</span>
+  <div class="w3-display-middle">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Arcaangeel... <span class="w3-hide-small">Después de tu bycho</span> no he encontrado otro bycho mejool</span>
   </div>
 </div>
 
-
 </body>
-</html>  
-
-   """
+</html>
